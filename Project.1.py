@@ -14,7 +14,7 @@ class ATM:
     def deposit(self, amount):
         if amount > 0:
             self.balance += amount
-            print(f"Deposited ${amount}. New balance is {self.balance} ₾.")
+            print(f"Deposited {amount} ₾. New balance is {self.balance} ₾.")
         else:
             print(" Amount must be greater than zero.")
 
@@ -22,7 +22,7 @@ class ATM:
     def withdraw(self, amount):
          if amount < self.balance:
             self.balance -= amount
-            print(f"withdraw {amount}. New balance is {self.balance} ₾.")
+            print(f"withdraw {amount} ₾. New balance is {self.balance} ₾.")
          else:
             print(f"Withdrawal failed. There is not enough money in the account {self.balance} ₾.")
 
