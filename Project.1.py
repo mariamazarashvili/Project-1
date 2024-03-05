@@ -7,14 +7,14 @@ class ATM:
 
 # Method to check account balance
     def check_balance(self):
-        print(f"Account balance for {self.account_owner}: {self.balance} ₾.")
+        print(f"Account balance for {self.account_owner}: {self.balance} GEL.")
 
 
 #  Method to deposit money into the account
     def deposit(self, amount):
         if amount > 0:
             self.balance += amount
-            print(f"Deposited {amount} ₾. New balance is {self.balance} ₾.")
+            print(f"Deposited {amount} GEL. New balance is {self.balance} GEL.")
         else:
             print(" Amount must be greater than zero.")
 
@@ -22,9 +22,9 @@ class ATM:
     def withdraw(self, amount):
          if amount < self.balance:
             self.balance -= amount
-            print(f"withdraw {amount} ₾. New balance is {self.balance} ₾.")
+            print(f"withdraw {amount} GEL. New balance is {self.balance} GEL.")
          else:
-            print(f"Withdrawal failed. There is not enough money in the account {self.balance} ₾.")
+            print(f"Withdrawal failed. There is not enough money in the account {self.balance} GEL.")
 
     def save_to_file(self):
         with open("ATM.txt", "a")as file:
